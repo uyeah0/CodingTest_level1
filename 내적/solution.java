@@ -1,15 +1,15 @@
 /*
-Á¤¼ö¸¦ ´ã°í ÀÖ´Â ¹è¿­ arrÀÇ Æò±Õ°ªÀ» returnÇÏ´Â ÇÔ¼ö, solutionÀ» ¿Ï¼ºÇØº¸¼¼¿ä.
+ë¬¸ì œ ì„¤ëª…
+ê¸¸ì´ê°€ ê°™ì€ ë‘ 1ì°¨ì› ì •ìˆ˜ ë°°ì—´ a, bê°€ ë§¤ê°œë³€ìˆ˜ë¡œ ì£¼ì–´ì§‘ë‹ˆë‹¤. aì™€ bì˜ ë‚´ì ì„ return í•˜ë„ë¡ solution í•¨ìˆ˜ë¥¼ ì™„ì„±í•´ì£¼ì„¸ìš”.
+
+ì´ë•Œ, aì™€ bì˜ ë‚´ì ì€ a[0]*b[0] + a[1]*b[1] + ... + a[n-1]*b[n-1] ì…ë‹ˆë‹¤. (nì€ a, bì˜ ê¸¸ì´)
 */
 class Solution {
-    public double solution(int[] arr) {
-        double answer = 0;
-        
-        for(int i =0; i < arr.length; i++){
-            answer += arr[i];
+    public int solution(int[] a, int[] b) {
+        int answer = 0;
+        for(int i =0; i <a.length; i++){
+            answer += a[i]*b[i];
         }
-        answer = answer/arr.length;
-        
         return answer;
     }
 }
