@@ -28,7 +28,7 @@ class Solution {
             case 2: answer[0] =5;break;
             default: answer[0] = 6;
         }
-        return answer;
+        
         return answer;
     }
 }        
