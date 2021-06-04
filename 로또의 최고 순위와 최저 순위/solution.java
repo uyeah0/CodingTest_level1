@@ -12,9 +12,24 @@ class Solution {
             }
             if(lottos[i] == 0) cntMax++;
         }
-        answer[0] = 7-cntMax;
-        answer[1] = 7-cntMin;
+      switch(cntMin){
+            case 6: answer[1] =1;break;
+            case 5: answer[1] =2;break;
+            case 4: answer[1] =3;break;
+            case 3: answer[1] =4;break;
+            case 2: answer[1] =5;break;
+            default: answer[1] = 6;
+        }
+        switch(cntMax){
+            case 6: answer[0] =1;break;
+            case 5: answer[0] =2;break;
+            case 4: answer[0] =3;break;
+            case 3: answer[0] =4;break;
+            case 2: answer[0] =5;break;
+            default: answer[0] = 6;
+        }
+        return answer;
         return answer;
     }
 }        
-       
+  
