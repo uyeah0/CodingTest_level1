@@ -10,7 +10,6 @@ class Solution {
                 l = commands[i][2];//3
             for(int j =s; j <e; j++ ){
                 for(int k = i+1; k <= e; k++  ){
-                    
                 }
             }
  
